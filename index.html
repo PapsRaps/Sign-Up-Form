@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href="reset.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <img src="./images/takoyaki1.jpg" alt="Image of Takoyaki" class="imgBackground">
+        <div class="darkBackground"><img src="./images/takoyakiLOGO.png" class="imgLogo">TAKOYAKI</div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <p class="buttonLike">JAPANESE STREET FOOD</p>
+            <h1>Little Balls of Happiness!</h1>
+            <p class="description">Crispy outside, soft inside, and bursting with savory goodness. Your <i>favorite</i> Japanese street-food snack is waiting for you.</p>
+        </div>
+        <div class="formsContent">
+            <h1>Order Here!</h1>
+            <form id="orderForm" action="." method="get">
+                <div class="formCol right">
+                    <div class="formRow">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    
+                    <div class="formRow">
+                        <label for="flavor">FLAVOR</label>
+                        <select id="flavor" required>
+                            <option value disabled selected>--CHOOSE A FLAVOR--</option>
+                            <option value="classicOctopus">Classic Octopus</option>
+                            <option value="classicOctopus">Cheesy Takoyaki</option>
+                            <option value="classicOctopus">Shrimp Takoyaki</option>
+                        </select>
+                    </div>
+                    
+                    <div class="formRow">
+                        <label for="quantity">SERVING</label>
+                        <input type="number" id="quantity" placeholder="1-10" min="1" max="10" required>
+                    </div>
+                </div>
+                <div class="formCol left">
+                    <div class="formRow">
+                        <label for="firstName">LAST NAME</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+
+                    <div class="formRow">
+                        <label for="sauce">SAUCE</label>
+                        <select id="sauce" required>
+                            <option value disabled selected>--CHOOSE YOUR SAUCE--</option>
+                            <option value="classicOctopus">Classic Takoyaki Sauce</option>
+                            <option value="classicOctopus">Spicy Mayo</option>
+                            <option value="classicOctopus">Teriyaki Sauce</option>
+                        </select>
+                    </div>
+
+                    <div class="formRow">
+                        <label for="address">ADDRESS</label>
+                        <input type="text" id="address" required placeholder="Enter your full address" minlength="5">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <button type="submit" form="orderForm">Order Now ➜</button>
+        <div class="smallText">
+            <p>Hungry for more? <a href=".">Explore our menu!</a></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
